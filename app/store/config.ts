@@ -64,7 +64,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-4o-mini" as ModelType,
+    model: "o3-mini" as ModelType,
     providerName: "OpenAI" as ServiceProvider,
     temperature: 0.4,
     top_p: 0.7,
@@ -72,8 +72,8 @@ export const DEFAULT_CONFIG = {
     presence_penalty: 0,
     frequency_penalty: 0,
     sendMemory: true,
-    historyMessageCount: 15,
-    compressMessageLengthThreshold: 1500,
+    historyMessageCount: 30,
+    compressMessageLengthThreshold: 5000,
     compressModel: "gpt-4o-mini",
     compressProviderName: "OpenAI",
     enableInjectSystemPrompts: false,
